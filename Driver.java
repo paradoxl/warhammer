@@ -38,8 +38,8 @@ public class Driver extends Application {
 
 
     VBox vbox = new VBox(button);
-    Scene scene = new Scene(vbox);
-    primaryStage.setScene(scene);
+    Scene enterButton = new Scene(vbox);
+    primaryStage.setScene(enterButton);
       //creating a Group object 
       Group group = new Group(); 
        
@@ -53,8 +53,10 @@ public class Driver extends Application {
       primaryStage.setTitle("Menu"); 
    
       //Adding the scene to Stage 
+      primaryStage.setScene(enterButton);
       primaryStage.setScene(scene); 
       primaryStage.setScene(scene1);
+      
        
       //Displaying the contents of the stage 
       primaryStage.show(); 
