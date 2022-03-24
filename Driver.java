@@ -1,8 +1,12 @@
-import javafx.application.Application; 
+
+
+import javafx.application.Application;
+import javafx.scene.Scene;
+import javafx.scene.control.Button;
+import javafx.scene.layout.VBox;
+import javafx.stage.Stage;
 import javafx.scene.Group; 
-import javafx.scene.Scene; 
 import javafx.scene.paint.Color; 
-import javafx.stage.Stage;  
 import javafx.scene.control.TextField;
 import javafx.scene.control.Label;
 import javafx.scene.layout.HBox;
@@ -18,6 +22,24 @@ public class Driver extends Application {
     box.setPadding(new Insets(25, 5 , 5, 50));
     box.getChildren().addAll(label1, textField1);
     Scene scene1 = new Scene(box, 595, 150, Color.BEIGE);
+
+
+
+
+
+
+    Button button = new Button();
+
+    button.setText("Click me!");
+
+    button.setOnAction((event) -> {
+        System.out.println("Button clicked!");
+    });
+
+
+    VBox vbox = new VBox(button);
+    Scene scene = new Scene(vbox);
+    primaryStage.setScene(scene);
       //creating a Group object 
       Group group = new Group(); 
        
