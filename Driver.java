@@ -1,67 +1,24 @@
+import java.util.Scanner;
 
+import javax.lang.model.util.ElementScanner14;
+class Driver{
+public static void main(String[] args) {
+   Scanner input = new Scanner(System.in);
+   try{
+   System.out.println("1: Login");
+   System.out.println("2: New Account");
+   int loginChoice = input.nextInt();
 
-import javafx.application.Application;
-import javafx.scene.Scene;
-import javafx.scene.control.Button;
-import javafx.scene.layout.VBox;
-import javafx.stage.Stage;
-import javafx.scene.Group; 
-import javafx.scene.paint.Color; 
-import javafx.scene.control.TextField;
-import javafx.scene.control.Label;
-import javafx.scene.layout.HBox;
-import javafx.geometry.Insets;
-
-public class Driver extends Application { 
-   @Override     
-   public void start(Stage primaryStage) throws Exception {     
-       
-    TextField textField1 = new TextField("Enter your name");
-    Label label1 = new Label("Name: ");
-    HBox box = new HBox(5);
-    box.setPadding(new Insets(25, 5 , 5, 50));
-    box.getChildren().addAll(label1, textField1);
-    Scene scene1 = new Scene(box, 595, 150, Color.BEIGE);
-
-
-
-
-
-
-    Button button = new Button();
-
-    button.setText("Click me!");
-
-    button.setOnAction((event) -> {
-        System.out.println("Button clicked!");
-    });
-
-
-    VBox vbox = new VBox(button);
-    Scene enterButton = new Scene(vbox);
-    primaryStage.setScene(enterButton);
-      //creating a Group object 
-      Group group = new Group(); 
-       
-      //Creating a Scene by passing the group object, height and width   
-      Scene scene = new Scene(group ,600, 300); 
+   if (loginChoice == 1){
       
-      //setting color to the scene 
-      scene.setFill(Color.BLACK);  
-      
-      //Setting the title to Stage. 
-      primaryStage.setTitle("Menu"); 
+   }
+   else if (loginChoice == 2){
+
+   }
+}
+   catch(Exception loginError){
+      System.out.println("Please enter a valid selection");
+   }
    
-      //Adding the scene to Stage 
-      primaryStage.setScene(enterButton);
-      primaryStage.setScene(scene); 
-      primaryStage.setScene(scene1);
-      
-       
-      //Displaying the contents of the stage 
-      primaryStage.show(); 
-   }    
-   public static void main(String args[]){          
-      launch(args);     
-   }         
-} 
+}
+}
