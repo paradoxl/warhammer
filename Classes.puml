@@ -1,0 +1,5 @@
+@startuml
+
+person <|-- employee
+
+@enduml
