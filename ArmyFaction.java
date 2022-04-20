@@ -2,8 +2,8 @@ import java.util.Scanner;
 
 public class ArmyFaction {
     Scanner scanner = new Scanner(System.in);
-    private String Army;
-    private String sub;
+    // private String Army;
+    // private String sub;
     private String armySelection;
     private String subSelection;
 

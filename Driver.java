@@ -6,12 +6,18 @@ public class Driver {
         login log = new login();
         ArmyFaction selection = new ArmyFaction();
         log.loginMenu();
-        selection.chooseArmy();
-        System.out.println(selection.getArmyFaction());
 
-        // System.out.println("Thanks for selecting your army");
-        // System.out.println("How many dice would you like to roll?");
-        // //int diceResponse = scanner.nextInt();
+        //army selection and display
+        selection.chooseArmy();
+        System.out.println("Your army is as follows:");
+        System.out.println(selection.getArmyFaction());
+        System.out.println(selection.getSubSelection());
+
+        System.out.println("Thanks for selecting your army");
+        System.out.println("How many dice would you like to roll?");
+        int diceResponse = scanner.nextInt();
+
+       // dice(diceResponse);
 
     }
 }
