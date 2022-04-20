@@ -1,5 +1,12 @@
-@startuml
+@startuml a
 
-person <|-- employee
+class test{
++variable
+method()
+}
+class other{
++variable
+method()
+}
 
 @enduml
