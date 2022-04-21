@@ -1,0 +1,44 @@
+@startuml Warhammer
+
+class Driver{
+    - armyName : String
+main(String[] args)
+selectSavedArmy(armyName : String)
+viewSelectedArmy(armyName : String)
+}
+
+class Login{
+    -userName : String
+    -password : double
+    loginMenu()
+
+
+}
+
+class ArmyFaction{
+    - armySelection : String
+    - subSelection : String
+    chooseArmy()
+    smSubSelection()
+    chaosSubSelection()
+    orkSubSelection()
+    setArmyFaction()
+    getArmyFaction()
+    setSubFaction()
+    getSubFaction()
+
+}
+
+class Dice{
+    -numberOfDice : int
+getDiceAmount()
+setDiceAmount()
+roll(numberOfDice : int)
+}
+
+class gameStyle{
+    - gameType : String
+    getGameStyle()
+    setGameStyle()
+}
+@enduml
