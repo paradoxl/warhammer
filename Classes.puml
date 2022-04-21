@@ -1,6 +1,7 @@
 @startuml Warhammer
 
 class Driver{
+    - armyName : String
 main(String[] args)
 selectSavedArmy(armyName : String)
 viewSelectedArmy(armyName : String)
