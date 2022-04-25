@@ -10,14 +10,15 @@ public class Driver {
         //army selection and display
         selection.chooseArmy();
         System.out.println("Your army is as follows:");
-        System.out.println(selection.getArmyFaction());
-        System.out.println(selection.getSubSelection());
+        System.out.println("Army: " + selection.getArmyFaction());
+        
+        System.out.println("Sub Faction: " + selection.getSubSelection());
 
-        System.out.println("Thanks for selecting your army");
-        System.out.println("How many dice would you like to roll?");
-        int diceResponse = scanner.nextInt();
+    //     System.out.println("Thanks for selecting your army");
+    //     System.out.println("How many dice would you like to roll?");
+    //     int diceResponse = scanner.nextInt();
 
-       // dice(diceResponse);
+    //    // dice(diceResponse);
 
     }
 }

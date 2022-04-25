@@ -2,8 +2,6 @@ import java.util.Scanner;
 
 public class ArmyFaction {
     Scanner scanner = new Scanner(System.in);
-    // private String Army;
-    // private String sub;
     private String armySelection;
     private String subSelection;
 
@@ -114,7 +112,7 @@ public class ArmyFaction {
     }
 
 
-
+    //this will be used when editing an already created army.
     public void setArmyFaction(String armySelection) {
         this.armySelection = armySelection;
     }
@@ -123,6 +121,7 @@ public class ArmyFaction {
         return armySelection;
     }
 
+    //this will be used when editing an already created army
     public void setSubFaction(String subSelection){
         this.subSelection = subSelection;
     }
