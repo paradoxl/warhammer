@@ -6,24 +6,25 @@ public class Dice {
     public void dSix() {
         final SecureRandom randomNumbers = new SecureRandom();
         Scanner scanner = new Scanner(System.in);
+       int totalDice = 0;
 
         System.out.println("please choose an ammount of dice to roll");
 
         
-            try {
+        
                 int numberOfRolls = scanner.nextInt();
 
                 for (int i = 1; i < numberOfRolls+1; i++) {
-                    int die1 = randomNumbers.nextInt(6);
-                    System.out.println("Roll " + i + " : " + die1);
+                    int die = 1 + randomNumbers.nextInt(6);
+                    System.out.println("Roll " + i + ": " + die);
+                    totalDice = totalDice + die;
                 }
-            } catch (java.util.NoSuchElementException e) {
-                System.out.println("error in retreiving rolls");
-            }
+                System.out.println("Total roll: " + totalDice);
+            
 
             
 
         
-        scanner.close();
+        //scanner.close();
     }
 }
