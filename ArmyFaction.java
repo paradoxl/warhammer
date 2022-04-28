@@ -29,7 +29,7 @@ public class ArmyFaction {
             default:
                 System.out.println("there was an error in your selection");
         }
-        scanner.close();
+       
     }
 
 
@@ -128,5 +128,5 @@ public class ArmyFaction {
     public String getSubSelection(){
         return subSelection;
     }
-
+   
 }
