@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.util.concurrent.TimeUnit;
 
 public class Driver {
     public static void main(String[] args) {
@@ -16,6 +17,27 @@ public class Driver {
         System.out.println("Sub Faction: " + selection.getSubSelection());
 
         System.out.println("Thanks for selecting your army");
+            selection.writeArmy();
+            
+            try {
+                System.out.println("Saving in progress");
+                Thread.sleep(500);
+                System.out.println(".");
+                Thread.sleep(500);
+                System.out.println(".");
+                Thread.sleep(500);
+                Thread.sleep(500);
+                System.out.println(".");
+                Thread.sleep(500);
+                System.out.println(".");
+                Thread.sleep(500);
+                System.out.println("Saving complete");
+            } catch (Exception e) {
+                System.out.println("Error");
+            }
+            
+        
+
 
         dice.dSix();
        

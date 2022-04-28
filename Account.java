@@ -4,6 +4,7 @@ import java.util.Scanner;
 public class Account {
     private String username;
     private String password;
+    private String test;
     Scanner input = new Scanner(System.in);
     // sudo username and password for realism
 
@@ -15,7 +16,7 @@ public class Account {
         System.out.println("Please choose a password");
         password = input.nextLine();
         System.out.println("Please re-enter your password");
-        String test = input.nextLine();
+        test = input.nextLine();
 
         if(password == test){
             System.out.println("Thanks! your password has been set");

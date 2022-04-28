@@ -1,9 +1,24 @@
+import java.util.Formatter;
 import java.util.Scanner;
 
 public class ArmyFaction {
     Scanner scanner = new Scanner(System.in);
     private String armySelection;
     private String subSelection;
+
+    public void writeArmy(){
+    try
+    {
+        Formatter output = new Formatter("ArmyData.txt");
+        output.format("%s %s", getArmyFaction(), getSubSelection());
+        output.close();
+    }catch(Exception e)
+    {
+        System.out.println("WARNING");
+        System.out.println("Could not find/open file");
+        System.out.println("WARNING");
+    }
+}
 
     public void chooseArmy() {
         System.out.println("Please select an army below");
@@ -31,7 +46,6 @@ public class ArmyFaction {
         }
        
     }
-
 
     public void SMSubSelection() {
         System.out.println("Please choose a subfaction");
@@ -111,8 +125,7 @@ public class ArmyFaction {
         }
     }
 
-
-    //this will be used when editing an already created army.
+    // this will be used when editing an already created army.
     public void setArmyFaction(String armySelection) {
         this.armySelection = armySelection;
     }
@@ -121,12 +134,13 @@ public class ArmyFaction {
         return armySelection;
     }
 
-    //this will be used when editing an already created army
+    // this will be used when editing an already created army
     public void setSubFaction(String subSelection){
         this.subSelection = subSelection;
     }
+
     public String getSubSelection(){
         return subSelection;
     }
-   
+
 }
