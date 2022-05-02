@@ -5,6 +5,12 @@ public class ArmyFaction {
     Scanner scanner = new Scanner(System.in);
     private String armySelection;
     private String subSelection;
+    private String specialPower;
+    private String waaaagggh;
+    private String emperorsLight;
+    private String bloodForTheBloodGod;
+
+    Units infantry = new Units();
 
     public void writeArmy(){
     try
@@ -32,14 +38,20 @@ public class ArmyFaction {
             case 1:
                 SMSubSelection();
                 setArmyFaction("Space marines");
+                specialPower = emperorsLight;
+                infantry.chooseUnits();
                 break;
             case 2:
                 ChaosSubSelection();
                 setArmyFaction("Chaos Space Marines");
+                specialPower = bloodForTheBloodGod;
+                infantry.chooseUnits();
                 break;
             case 3:
                 OrkSelection();
                 setArmyFaction("Ork");
+                specialPower = waaaagggh;
+                infantry.chooseUnits();
                 break;
             default:
                 System.out.println("there was an error in your selection");
@@ -58,6 +70,7 @@ public class ArmyFaction {
             case 1:
                 // branch ultramarine
                 setSubFaction("UltraMarines");
+
                 break;
             case 2:
                 // branch Dark Angels
@@ -124,6 +137,9 @@ public class ArmyFaction {
                 System.out.println("There was an error with your selection");
         }
     }
+
+
+    
 
     // this will be used when editing an already created army.
     public void setArmyFaction(String armySelection) {
