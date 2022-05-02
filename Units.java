@@ -44,7 +44,7 @@ public class Units extends ArmyFaction {
 
 // give units specific quality for each faction
     public void applyPower(String power){
-        // tie superpower to unit and add that modifer to the roll.
+        // TODO:tie superpower to unit and add that modifer to the roll.
     }
 
     public void setUnit(String unit){
