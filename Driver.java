@@ -19,6 +19,18 @@ public class Driver {
         System.out.println("Thanks for selecting your army");
             selection.writeArmy();
             
+            System.out.println("Would you like to edit any army information?");
+            System.out.println("1: Yes");
+            System.out.println("2: No");
+            int editChoice = scanner.nextInt();
+            if(editChoice == 1){
+                selection.chooseArmy();
+                selection.writeArmy();
+            }
+            else{
+                System.out.println("Thanks!");
+            }
+
             try {
                 System.out.println("Saving in progress");
                 Thread.sleep(500);
@@ -35,11 +47,12 @@ public class Driver {
             } catch (Exception e) {
                 System.out.println("Error");
             }
-            
         
 
 
         dice.dSix();
+
+
        
         scanner.close();
     }

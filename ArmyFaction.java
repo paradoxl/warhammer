@@ -31,15 +31,15 @@ public class ArmyFaction {
         switch (selection) {
             case 1:
                 SMSubSelection();
-                armySelection = "Space Marines";
+                setArmyFaction("Space marines");
                 break;
             case 2:
                 ChaosSubSelection();
-                armySelection = "Chaos Space Marines";
+                setArmyFaction("Chaos Space Marines");
                 break;
             case 3:
                 OrkSelection();
-                armySelection = "Ork";
+                setArmyFaction("Ork");
                 break;
             default:
                 System.out.println("there was an error in your selection");
@@ -57,15 +57,15 @@ public class ArmyFaction {
         switch (subResponse) {
             case 1:
                 // branch ultramarine
-                subSelection = "Ultra-Marines";
+                setSubFaction("UltraMarines");
                 break;
             case 2:
                 // branch Dark Angels
-                subSelection = "Dark Angels";
+                setSubFaction("Dark Angles");
                 break;
             case 3:
                 // branch Space wolves
-                subSelection = "Space Wolves";
+                setSubFaction("Space Wolves");
                 break;
             default:
                 System.out.println("there was an error in your selection");
@@ -84,15 +84,15 @@ public class ArmyFaction {
         switch (subResponse) {
             case 1:
                 // branch death guard
-                subSelection = "Death Guard";
+                setSubFaction("Death Guard");
                 break;
             case 2:
                 // branch thousand sons
-                subSelection = "Thousand Sons";
+                setSubFaction("Thousand sons");
                 break;
             case 3:
                 // branch night lords
-                subSelection = "Night Lords";
+                setSubFaction("Night Lords");
                 break;
             default:
                 System.out.println("there was an error with your selection");
@@ -110,15 +110,15 @@ public class ArmyFaction {
         switch (subResponse) {
             case 1:
                 // branch goffs
-                subSelection = "Goffs";
+                setSubFaction("Goffs");
                 break;
             case 2:
                 // branch bad moons
-                subSelection = "Bad Moons";
+                setSubFaction("Bad moons");
                 break;
             case 3:
                 // branch evil sunz
-                subSelection = "Evil Sunz";
+                setSubFaction("Evil Sunz");
                 break;
             default:
                 System.out.println("There was an error with your selection");
