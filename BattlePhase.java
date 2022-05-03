@@ -1,8 +1,9 @@
 public class BattlePhase extends Dice {
     Dice dice = new Dice();
-
+    ArmyFaction fac = new ArmyFaction();
     public void battle() {
 
+       
         // loop this until health is gone.
         // bug health becomes negative
         while (healthCounter > 0) {

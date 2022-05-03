@@ -1,5 +1,4 @@
 import java.util.Scanner;
-import java.util.concurrent.TimeUnit;
 
 public class Driver {
     public static void main(String[] args) {
@@ -53,6 +52,11 @@ public class Driver {
         
             BattlePhase fight = new BattlePhase();
 
+
+
+            System.out.println("Welcome " + selection.getSubSelection());
+            System.out.println("It's good to have  " + selection.getArmyFaction() + " With us in this battle today");
+            
             fight.battle();
 
 
