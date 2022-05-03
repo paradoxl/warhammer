@@ -1,0 +1,29 @@
+@startuml
+
+actor       User       as Foo
+participant login as Foo1
+participant select_army as Foo2
+participant save_army as Foo3
+participant Roll_hit_die as Foo4
+participant Roll_damage_die as Foo5
+
+Foo -> Foo1 : create account/login
+Foo1 -> Foo2 : Select army from menus
+Foo3 -> Foo : return info to user
+Foo3 -> Foo4 : start a combat phase
+Foo4 -> Foo : Display results of current roll
+Foo4 -> Foo5 : start a damage phase
+Foo5 -> Foo : Display results of current roll
+
+
+
+
+' Foo -> Foo1 : To actor
+' Foo -> Foo2 : To boundary
+' Foo -> Foo3 : To control
+' Foo -> Foo4 : To entity
+' Foo -> Foo5 : To database
+' Foo -> Foo6 : To collections
+' Foo -> Foo7: To queue
+
+@enduml
