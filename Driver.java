@@ -27,8 +27,11 @@ public class Driver {
                 selection.chooseArmy();
                 selection.writeArmy();
             }
-            else{
+            else if (editChoice == 2){
                 System.out.println("Thanks!");
+            }
+            else{
+                System.out.println("Error in input the pigeons have fled.");
             }
 
             try {
@@ -48,12 +51,15 @@ public class Driver {
                 System.out.println("Error");
             }
         
+            BattlePhase fight = new BattlePhase();
 
-
-        dice.dSix();
+            fight.battle();
 
 
        
         scanner.close();
     }
 }
+
+
+//TODO: encapsulation

@@ -4,13 +4,13 @@ import java.util.Scanner;
 public class ArmyFaction {
     Scanner scanner = new Scanner(System.in);
     private String armySelection;
-    private String subSelection;
-    private String specialPower;
-    private String waaaagggh;
-    private String emperorsLight;
-    private String bloodForTheBloodGod;
+    protected String subSelection;
+    protected String specialPower;
+    protected String waaaagggh;
+    protected String emperorsLight;
+    protected String bloodForTheBloodGod;
 
-    Units infantry = new Units();
+   
 
     public void writeArmy(){
     try
@@ -39,19 +39,19 @@ public class ArmyFaction {
                 SMSubSelection();
                 setArmyFaction("Space marines");
                 specialPower = emperorsLight;
-                infantry.chooseUnits();
+                //infantry.chooseUnits();
                 break;
             case 2:
                 ChaosSubSelection();
                 setArmyFaction("Chaos Space Marines");
                 specialPower = bloodForTheBloodGod;
-                infantry.chooseUnits();
+                //infantry.chooseUnits();
                 break;
             case 3:
                 OrkSelection();
                 setArmyFaction("Ork");
                 specialPower = waaaagggh;
-                infantry.chooseUnits();
+                //infantry.chooseUnits();
                 break;
             default:
                 System.out.println("there was an error in your selection");
