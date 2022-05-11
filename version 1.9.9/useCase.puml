@@ -1,0 +1,25 @@
+@startuml usecase
+left to right direction
+rectangle Warhammer_Dice_Game{
+
+
+UseCase startGame as UC1
+UseCase rollDice as UC2
+UseCase useHealing as UC3
+UseCase save_Wins_and_Losses as UC4
+
+
+}
+actor player as p
+
+p -> UC1
+UC1 ..> UC2 : includes
+UC1 ..> UC3 : includes
+UC1 ..> UC4 : includes
+
+
+
+
+
+
+@enduml

@@ -1,0 +1,60 @@
+@startuml
+
+class Dice extends Warhammer{
+- int hitDie
+- int damageDie
++ damageMod()
++ roll20()
++ roll6()
++ setHitDie()
++ getHitDie() : int
++ setDamageDie()
++ getDamageDie() : int
+}
+
+class Driver{
+    + static void main()
+}
+
+class Enemy extends Player{
+    + Enemy()
+}
+
+class Gameplay{
+    - int playerRoll
+    - int enemyRoll
+    - boolean playerTurn
+    - boolean enemyTurn
+    - int wins
+    - int losses
+    + playGame()
+    + playerTurn()
+    + computerTurn()
+}
+
+class Player{
+    # bool playerState
+    # int healthPoints
+    + setPlayerState()
+    + getPlayerState() : boolean
+    + setHealthPoints()
+    + getHealthPoints() : int
+}
+
+class Scoreboard{
+- int wins
+- int losses
++ save()
++ getWins() : int
++ setWins()
++ getLosses() : int
++ setLosses()
+
+}
+
+abstract class Warhammer{
++ abstract damageMod()
+}
+
+
+@enduml
